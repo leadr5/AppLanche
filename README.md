@@ -1,7 +1,7 @@
-<h1 align="center" style="color: rgb(55, 14, 202); font-style:italic;">Central-Alarme</h1>
+<h1 align="center">Central-Alarme</h1>
 <h4 align="center">Projeto em desenvolvimento, um Aplicativo para venda de lanches</h4>
 <p>
-<h3 align="center" style="color: rgb(55, 14, 202);">Para o projeto:</h3>
+<h3 align="center">Para o projeto:</h3>
 <br>
 <ul>
   
@@ -10,7 +10,7 @@
   <li>Um webservice desenvolvimento em C#, para comunicação entre App e Software</li>
 </ul>
 <br>
-<h3 align="center" style="color: rgb(55, 14, 202);">Imagens do Aplicativo de vendas</h3>
+<h3 align="center">Imagens do Aplicativo de vendas</h3>
 
 <h4 align="center">Imagem de login do Aplicativo:</h4>
 <img src="src/1.png">
@@ -33,7 +33,7 @@
 <h4 align="center">Listagem de bebidas:</h4>
 <img src="src/7.png">
 
-<h3 align="center" style="color: rgb(55, 14, 202);">Imagens do Software de controle de pedidos e vendas</h3>
+<h3 align="center">Imagens do Software de controle de pedidos e vendas</h3>
 <h4 align="center">Tela de cadastro de produtos:</h4>
 <img src="src/11.png">
 <h4 align="center">Tela de registro de clientes:</h4>
