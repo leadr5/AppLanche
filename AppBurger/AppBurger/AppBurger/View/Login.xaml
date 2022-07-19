@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBurger.View.Login" BackgroundColor="Black" >
+    <ScrollView >
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Source="login1.png" WidthRequest="200" HeightRequest="200"/>
+            <Label Text="Login" TextColor="White" HorizontalOptions="Center" FontSize="Large"/>
+            <Entry x:Name="txtEmail" PlaceholderColor="White" Placeholder="Informe o email" BackgroundColor="#24201a" TextColor="White" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtSenha" PlaceholderColor="White" Placeholder="Informe a senha" BackgroundColor="#24201a" TextColor="White" HorizontalTextAlignment="Center" IsPassword="True"/>
+            <Button x:Name="btnLogin" Text="Login" BackgroundColor="DarkGray" HorizontalOptions="Center" WidthRequest="200" Clicked="btnLogin_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

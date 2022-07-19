@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBurger.View.PageInitial" BackgroundColor="Black" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content >
+        <StackLayout Padding="9" >
+            <Grid  BackgroundColor="#082045" Padding="20" Margin="0, -6, 0, -6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <ImageButton Source="backBranco.png"  x:Name="voltar" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start" Clicked="voltar_Clicked" Grid.Row="0" Grid.Column="0" BackgroundColor="#082045"/>
+                <Label Text="Nome Loja!" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="22" FontAttributes="Italic,Bold"  Grid.Row="0" Grid.Column="1"/>
+                <ImageButton Source="carrinhoBranco.png" x:Name="carrinho" WidthRequest="50" HeightRequest="50" HorizontalOptions="End" Grid.Row="0" Grid.Column="2" BackgroundColor="#082045"/>
+
+            </Grid>
+
+            <RefreshView x:Name="myRefreshView" RefreshColor="#2196F3" Refreshing="RefreshView_Refreshing">
+                <ScrollView>
+                    
+                    <StackLayout HorizontalOptions="CenterAndExpand" Margin="0, 60, 0, 0">
+                        <Image Source="login1.png" WidthRequest="200" HeightRequest="200"/>
+                        <Button x:Name="Lanches" Text="Lanches" Grid.Row="0" Grid.Column="0" Clicked="Lanches_Clicked" WidthRequest="300" HeightRequest="50" BackgroundColor="#03a89d" CornerRadius="10" FontSize="Medium" FontAttributes="Bold"/>
+                        <Image Source="bebida1.png" WidthRequest="200" HeightRequest="200" Margin="0, 40, 0, 0" />
+                        <Button x:Name="Bebidas" Text="Bebidas"  Grid.Row="0" Grid.Column="2" Clicked="Bebidas_Clicked" WidthRequest="300" HeightRequest="50" BackgroundColor="#03a89d" CornerRadius="10" FontSize="Medium" FontAttributes="Bold"/>
+                    </StackLayout>
+                </ScrollView>
+            </RefreshView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

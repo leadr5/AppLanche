@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBurger.View.ViewProduto" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Grid  BackgroundColor="#082045" Padding="20" Margin="0, -6, 0, -6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <ImageButton Source="backBranco.png"  x:Name="voltar" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start" Clicked="voltar_Clicked" Grid.Row="0" Grid.Column="0" BackgroundColor="#082045"/>
+                <Label Text="Nome Loja!" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="22" FontAttributes="Italic,Bold"  Grid.Row="0" Grid.Column="1"/>
+                <ImageButton Source="carrinhoBranco.png" x:Name="carrinho" WidthRequest="50" HeightRequest="50" HorizontalOptions="End" Grid.Row="0" Grid.Column="2" BackgroundColor="#082045"/>
+
+            </Grid>
+
+            <Label x:Name="txtID" IsVisible="false"/>
+            <Image x:Name="imgLanche" WidthRequest="200" HeightRequest="200" />
+            <Label x:Name="txtProduto" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"  FontSize="50"/>
+            <Label x:Name="txtDescricao" HorizontalTextAlignment="Center" WidthRequest="200"  FontAttributes="Italic"  FontSize="Medium"/>
+            <Label x:Name="txtPreco" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="40"/>
+            <Button x:Name="btnComprar" Text="Adicionar ao Carrinho" TextColor="White" WidthRequest="300" HeightRequest="50" BackgroundColor="#023605" CornerRadius="10" FontSize="Medium" FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
