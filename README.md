@@ -1,4 +1,4 @@
-<h1 align="center">Central-Alarme</h1>
+<h1 align="center">App-Lanche</h1>
 <h4 align="center">Projeto em desenvolvimento, um Aplicativo para venda de lanches</h4>
 <p>
 <h3 align="center">Para o projeto:</h3>
